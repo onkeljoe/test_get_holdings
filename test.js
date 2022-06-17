@@ -18,10 +18,10 @@ const CRE8Rstrategies = [
 /*    { // tried out balancer method - does not work
       "name": "balancer-erc20-internal-balance_of",
       "params": {
-        "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
-        "token": "0x2ad402655243203fcfa7dcb62f8a08cc2ba88ae0",
+        "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce", //BeethovenX vault
+        "token": "0x2ad402655243203fcfa7dcb62f8a08cc2ba88ae0", //CRE8R
         "symbol": "CRE8R",
-        "decimals": 18
+        "decimals": 18,
       }
     } */
 ];
@@ -30,7 +30,6 @@ const addresses = [process.env.MYADDRESS,] // just my address for testing
 
 //const block = 40013791 // snapshot vote round 12
 const block = 39001234 // snapshot vote round 11
-
 
 //##################################################
 
