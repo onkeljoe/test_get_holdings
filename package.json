@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@snapshot-labs/snapshot.js": "^0.3.100"
+  }
+}
