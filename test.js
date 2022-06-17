@@ -5,7 +5,6 @@ const snapshot = require('@snapshot-labs/snapshot.js');
 const CRE8Rstrategies = [
     {
       "name": "masterchef-pool-balance",
-      "network": "250",
       "params": {
         "pid": "39",
         "symbol": "BEETSLP -> SLP",
@@ -16,6 +15,15 @@ const CRE8Rstrategies = [
         "weightDecimals": 0 //3
       }
     },
+/*    { // tried out balancer method - does not work
+      "name": "balancer-erc20-internal-balance_of",
+      "params": {
+        "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
+        "token": "0x2ad402655243203fcfa7dcb62f8a08cc2ba88ae0",
+        "symbol": "CRE8R",
+        "decimals": 18
+      }
+    } */
 ];
 const CRE8R = 'cre8r'
 const addresses = [process.env.MYADDRESS,] // just my address for testing
@@ -28,8 +36,8 @@ const block = 39001234 // snapshot vote round 11
 
 const bribeSettings = {
     [CRE8R]: {
-      strategies: [...CRE8Rstrategies], //cre8r strategy 2 is the erc20 balance of address
-      network: 250
+      strategies: [...CRE8Rstrategies], // cre8r strategy 2 is the erc20 balance of address
+      network: 250                      // fantom
     }
 }
   
